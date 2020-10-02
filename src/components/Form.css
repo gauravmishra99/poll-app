@@ -1,0 +1,8 @@
+.formpage__card{
+    margin: 10px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,76 @@
+.vote {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  width: 100%;
+}
+.vote__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 87vh;
+}
+.vote__div {
+  width: 90vw;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+.vote__question {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+.vote__thanks {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(67, 227, 255);
+  margin-bottom: 10px;
+}
+
+.vote__polls {
+  cursor: pointer;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+.vote_pollsClicked {
+  cursor: not-allowed;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: grey !important;
+}
+
+.vote__not {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 87vh;
+  padding: 20px;
+}
+
+.not__text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 350px) {
+  .vote__thanks {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,169 @@
+.home__body {
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+.home__polls{
+  width: 100vw;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home__copied{
+  color:black;
+  position: absolute;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  bottom: 15px;
+  left: 15px;
+}
+
+.home__pollbtn{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.copyicon{
+  cursor: pointer;
+  color: rgb(238, 66, 95);
+}
+
+.createPollBtn {
+  position: fixed !important;
+  bottom: 15px;
+  right: 8px;
+}
+
+.body__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 20px;
+  outline: 0;
+}
+
+.paper__btndiv {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 52px;
+  right: 8px;
+}
+
+.paper__btn{
+  margin-bottom:10px !important;
+}
+
+.paper__question {
+  width: 460px;
+  margin-bottom: 20px !important;
+}
+
+.paper__option {
+  width: 400px;
+  margin-bottom: 20px !important;
+  margin-right: 10px !important;
+}
+
+.home__pollCards{
+  display: flex !important;
+  flex-direction: column;
+  position: relative !important;
+  margin: 10px !important;  
+  min-height: 15vh;
+  width: 30vw;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner{
+  height: 120px;
+  width: 120px;
+  border: 16px solid #f3f3f3;
+  border-top: 16px lightblue solid;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .home__polls{
+    display: flex;
+  }
+
+  .home__pollCards{
+    width: 90%;
+  }
+
+  .paper__question {
+    width: 90vw;
+    margin-bottom: 20px !important;
+  }
+  .paper__inputdiv{
+    display: flex;
+    width: 90vw;
+  }
+
+  .paper__btndiv {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: inherit;
+  }
+
+  .paper__btn{
+    margin-bottom:10px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+  }
+  .buttons_form{
+    margin: 10px;
+    display: flex;
+  }
+  .createPollBtn {
+    position: inherit !important;
+    font-size: 12px !important;
+  }
+  .paper{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 370px){
+  .paper__btn{
+    font-size: 10px !important;
+    font-weight: 500 !important;
+  }
+  .createPollBtn {
+    width: 120px !important;
+    font-size: 10px !important;
+  }
+}
